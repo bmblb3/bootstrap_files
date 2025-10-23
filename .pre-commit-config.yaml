@@ -11,14 +11,6 @@ repos:
       - id: check-yaml
       - id: check-added-large-files
 
-  - repo: local
-    hooks:
-      - id: pre-commit
-        name: pre-commit
-        entry: just ci
-        language: system
-        pass_filenames: false
-
   - repo: https://github.com/compilerla/conventional-pre-commit
     rev: v4.2.0
     hooks:
